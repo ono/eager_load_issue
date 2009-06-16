@@ -1,0 +1,995 @@
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-06-15 22:22:04) [POST]
+  Parameters: {"comment"=>{}}
+  [4;35;1mComment Create (0.6ms)[0m   [0mINSERT INTO "comments" ("created_at", "nickname", "updated_at", "post_id", "content") VALUES('2009-06-15 21:22:04', NULL, '2009-06-15 21:22:04', NULL, NULL)[0m
+Redirected to http://test.host/comments/996332878
+Completed in 9ms (DB: 4) | 302 Found [http://test.host/comments?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-06-15 22:22:04) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 953125641[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#edit (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 30ms (View: 30, DB: 1) | 200 OK [http://test.host/comments/953125641/edit]
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" [0m
+Rendering template within layouts/comments
+Rendering comments/index
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#show (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/comments/953125641]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-06-15 22:22:04) [PUT]
+  Parameters: {"comment"=>{}, "id"=>"953125641"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Redirected to http://test.host/comments/953125641
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/953125641?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2009-06-15 22:22:04) [POST]
+  Parameters: {"post"=>{}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "member_id", "updated_at", "content") VALUES('2009-06-15 21:22:04', NULL, NULL, '2009-06-15 21:22:04', NULL)[0m
+Redirected to http://test.host/posts/996332878
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/posts?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#destroy (for 0.0.0.0 at 2009-06-15 22:22:04) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+  [4;35;1mPost Destroy (0.2ms)[0m   [0mDELETE FROM "posts" WHERE "id" = 953125641[0m
+Redirected to http://test.host/posts
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/posts/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/posts/953125641/edit]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/posts/new]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/posts/953125641]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#update (for 0.0.0.0 at 2009-06-15 22:22:04) [PUT]
+  Parameters: {"post"=>{}, "id"=>"953125641"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Redirected to http://test.host/posts/953125641
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/posts/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-06-15 22:22:04) [POST]
+  Parameters: {"user"=>{}}
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:22:04', '2009-06-15 21:22:04', NULL, NULL)[0m
+Redirected to http://test.host/users/996332878
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-06-15 22:22:04) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+Redirected to http://test.host/users
+Completed in 51ms (DB: 1) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/users/953125641/edit]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-06-15 22:22:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-06-15 22:22:04) [PUT]
+  Parameters: {"id"=>"953125641", "user"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Redirected to http://test.host/users/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:30:31', '2009-06-15 21:30:31', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "member_id", "updated_at", "content") VALUES('2009-06-15 21:30:31', 'title', 996332878, '2009-06-15 21:30:31', '.......')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-06-15 22:30:33) [POST]
+  Parameters: {"comment"=>{}}
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO "comments" ("created_at", "nickname", "updated_at", "post_id", "content") VALUES('2009-06-15 21:30:33', NULL, '2009-06-15 21:30:33', NULL, NULL)[0m
+Redirected to http://test.host/comments/996332878
+Completed in 6ms (DB: 4) | 302 Found [http://test.host/comments?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-06-15 22:30:33) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+  [4;36;1mComment Destroy (0.3ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 953125641[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#edit (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/comments/953125641/edit]
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" [0m
+Rendering template within layouts/comments
+Rendering comments/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments]
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#show (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/comments/953125641]
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-06-15 22:30:33) [PUT]
+  Parameters: {"comment"=>{}, "id"=>"953125641"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Redirected to http://test.host/comments/953125641
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/953125641?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2009-06-15 22:30:33) [POST]
+  Parameters: {"post"=>{}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "member_id", "updated_at", "content") VALUES('2009-06-15 21:30:33', NULL, NULL, '2009-06-15 21:30:33', NULL)[0m
+Redirected to http://test.host/posts/996332878
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/posts?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#destroy (for 0.0.0.0 at 2009-06-15 22:30:33) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+  [4;35;1mPost Destroy (0.2ms)[0m   [0mDELETE FROM "posts" WHERE "id" = 953125641[0m
+Redirected to http://test.host/posts
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/posts/953125641]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/posts/953125641/edit]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/posts/new]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/posts/953125641]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#update (for 0.0.0.0 at 2009-06-15 22:30:33) [PUT]
+  Parameters: {"post"=>{}, "id"=>"953125641"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Redirected to http://test.host/posts/953125641
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/posts/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-06-15 22:30:33) [POST]
+  Parameters: {"user"=>{}}
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:30:33', '2009-06-15 21:30:33', NULL, NULL)[0m
+Redirected to http://test.host/users/996332878
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-06-15 22:30:33) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+Redirected to http://test.host/users
+Completed in 50ms (DB: 1) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/users/953125641/edit]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-06-15 22:30:33) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-06-15 22:30:33) [PUT]
+  Parameters: {"id"=>"953125641", "user"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Redirected to http://test.host/users/953125641
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:38:16', '2009-06-15 21:38:16', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-06-15 22:38:18) [POST]
+  Parameters: {"comment"=>{}}
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO "comments" ("created_at", "nickname", "updated_at", "post_id", "content") VALUES('2009-06-15 21:38:18', NULL, '2009-06-15 21:38:18', NULL, NULL)[0m
+Redirected to http://test.host/comments/996332878
+Completed in 6ms (DB: 35) | 302 Found [http://test.host/comments?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-06-15 22:38:18) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+  [4;36;1mComment Destroy (0.6ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 953125641[0m
+Redirected to http://test.host/comments
+Completed in 92ms (DB: 1) | 302 Found [http://test.host/comments/953125641]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#edit (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 154ms (View: 153, DB: 1) | 200 OK [http://test.host/comments/953125641/edit]
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM "comments" [0m
+Rendering template within layouts/comments
+Rendering comments/index
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/comments]
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#show (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/953125641]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-06-15 22:38:19) [PUT]
+  Parameters: {"comment"=>{}, "id"=>"953125641"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Redirected to http://test.host/comments/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/comments/953125641?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2009-06-15 22:38:19) [POST]
+  Parameters: {"post"=>{}}
+  [4;36;1mPost Create (79.9ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "member_id", "updated_at", "content") VALUES('2009-06-15 21:38:19', NULL, NULL, '2009-06-15 21:38:19', NULL)[0m
+Redirected to http://test.host/posts/996332878
+Completed in 86ms (DB: 80) | 302 Found [http://test.host/posts?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#destroy (for 0.0.0.0 at 2009-06-15 22:38:19) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+  [4;35;1mPost Destroy (74.7ms)[0m   [0mDELETE FROM "posts" WHERE "id" = 953125641[0m
+Redirected to http://test.host/posts
+Completed in 77ms (DB: 76) | 302 Found [http://test.host/posts/953125641]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/posts/953125641/edit]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 77ms (View: 5, DB: 1) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/posts/new]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2009-06-15 22:38:19) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/posts/953125641]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#update (for 0.0.0.0 at 2009-06-15 22:38:19) [PUT]
+  Parameters: {"post"=>{}, "id"=>"953125641"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Redirected to http://test.host/posts/953125641
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/posts/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-06-15 22:38:19) [POST]
+  Parameters: {"user"=>{}}
+  [4;35;1mUser Create (89.6ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:38:19', '2009-06-15 21:38:19', NULL, NULL)[0m
+Redirected to http://test.host/users/996332878
+Completed in 96ms (DB: 90) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-06-15 22:38:19) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (97.0ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+Redirected to http://test.host/users
+Completed in 155ms (DB: 98) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-06-15 22:38:20) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/users/953125641/edit]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-06-15 22:38:20) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-06-15 22:38:20) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-06-15 22:38:20) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-06-15 22:38:20) [PUT]
+  Parameters: {"id"=>"953125641", "user"=>{}}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Redirected to http://test.host/users/953125641
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:39:26', '2009-06-15 21:39:26', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-06-15 22:39:28) [POST]
+  Parameters: {"comment"=>{}}
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO "comments" ("created_at", "nickname", "updated_at", "post_id", "content") VALUES('2009-06-15 21:39:28', NULL, '2009-06-15 21:39:28', NULL, NULL)[0m
+Redirected to http://test.host/comments/996332878
+Completed in 6ms (DB: 4) | 302 Found [http://test.host/comments?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-06-15 22:39:28) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 953125641[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#edit (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/comments/953125641/edit]
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" [0m
+Rendering template within layouts/comments
+Rendering comments/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments]
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#show (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/953125641]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-06-15 22:39:28) [PUT]
+  Parameters: {"comment"=>{}, "id"=>"953125641"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 953125641) [0m
+Redirected to http://test.host/comments/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/comments/953125641?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2009-06-15 22:39:28) [POST]
+  Parameters: {"post"=>{}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "member_id", "updated_at", "content") VALUES('2009-06-15 21:39:28', NULL, NULL, '2009-06-15 21:39:28', NULL)[0m
+Redirected to http://test.host/posts/996332878
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/posts?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#destroy (for 0.0.0.0 at 2009-06-15 22:39:28) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+  [4;35;1mPost Destroy (0.2ms)[0m   [0mDELETE FROM "posts" WHERE "id" = 953125641[0m
+Redirected to http://test.host/posts
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/posts/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#edit (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/posts/953125641/edit]
+
+
+Processing PostsController#index (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/posts/new]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#show (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 2ms (View: 2, DB: 1) | 200 OK [http://test.host/posts/953125641]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+
+
+Processing PostsController#update (for 0.0.0.0 at 2009-06-15 22:39:28) [PUT]
+  Parameters: {"post"=>{}, "id"=>"953125641"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 953125641) [0m
+Redirected to http://test.host/posts/953125641
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/posts/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-06-15 22:39:28) [POST]
+  Parameters: {"user"=>{}}
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:39:28', '2009-06-15 21:39:28', NULL, NULL)[0m
+Redirected to http://test.host/users/996332878
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-06-15 22:39:28) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+  [4;36;1mUser Destroy (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 953125641[0m
+Redirected to http://test.host/users
+Completed in 48ms (DB: 1) | 302 Found [http://test.host/users/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/users/953125641/edit]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-06-15 22:39:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/users/953125641]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-06-15 22:39:28) [PUT]
+  Parameters: {"id"=>"953125641", "user"=>{}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 953125641) [0m
+Redirected to http://test.host/users/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/users/953125641?]
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:42:20', '2009-06-15 21:42:20', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-06-15 22:42:22) [POST]
+  Parameters: {"comment"=>{}}
+  [4;35;1mComment Create (0.8ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id") VALUES('2009-06-15 21:42:22', NULL, NULL, '2009-06-15 21:42:22', NULL)[0m
+Redirected to http://test.host/comments/1
+Completed in 11ms (DB: 1) | 302 Found [http://test.host/comments?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-06-15 22:42:22) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM "comments" [0m
+Rendering template within layouts/comments
+Rendering comments/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments]
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-06-15 22:42:22) [GET]
+Rendering template within layouts/comments
+Rendering comments/new
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2009-06-15 22:42:22) [POST]
+  Parameters: {"post"=>{}}
+  [4;36;1mPost Create (0.5ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 21:42:22', NULL, NULL, '2009-06-15 21:42:22', NULL)[0m
+Redirected to http://test.host/posts/1
+Completed in 9ms (DB: 1) | 302 Found [http://test.host/posts?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2009-06-15 22:42:22) [GET]
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2009-06-15 22:42:22) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-06-15 22:42:22) [POST]
+  Parameters: {"user"=>{}}
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:42:22', '2009-06-15 21:42:22', NULL, NULL)[0m
+Redirected to http://test.host/users/1
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-06-15 22:42:22) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-06-15 22:42:22) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:45:13', '2009-06-15 21:45:13', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-06-15 22:45:14) [POST]
+  Parameters: {"comment"=>{}}
+  [4;35;1mComment Create (0.7ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id") VALUES('2009-06-15 21:45:14', NULL, NULL, '2009-06-15 21:45:14', NULL)[0m
+Redirected to http://test.host/comments/1
+Completed in 11ms (DB: 1) | 302 Found [http://test.host/comments?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" [0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-06-15 22:45:14) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" [0m
+Rendering template within layouts/comments
+Rendering comments/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/comments]
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-06-15 22:45:14) [GET]
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#create (for 0.0.0.0 at 2009-06-15 22:45:14) [POST]
+  Parameters: {"post"=>{}}
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 21:45:14', NULL, NULL, '2009-06-15 21:45:14', NULL)[0m
+Redirected to http://test.host/posts/1
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/posts?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+
+
+Processing PostsController#index (for 0.0.0.0 at 2009-06-15 22:45:14) [GET]
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/posts]
+
+
+Processing PostsController#new (for 0.0.0.0 at 2009-06-15 22:45:14) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-06-15 22:45:15) [POST]
+  Parameters: {"user"=>{}}
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:45:15', '2009-06-15 21:45:15', NULL, NULL)[0m
+Redirected to http://test.host/users/1
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-06-15 22:45:15) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-06-15 22:45:15) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:47:30', '2009-06-15 21:47:30', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:48:08', '2009-06-15 21:48:08', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 21:48:08', 'title', '.......', '2009-06-15 21:48:08', 1)[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:49:12', '2009-06-15 21:49:12', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 21:49:12', 'title', '.......', '2009-06-15 21:49:12', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id") VALUES('2009-06-15 21:49:12', '', 'nick', '2009-06-15 21:49:12', 1)[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT "posts".* FROM "posts" WHERE ("posts".user_id = 1) [0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".post_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" INNER JOIN "posts" ON "comments".post_id = "posts".id WHERE (("posts".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 21:56:42', '2009-06-15 21:56:42', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 21:56:42', 'title', '.......', '2009-06-15 21:56:42', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 21:56:42', '', 'abc', '2009-06-15 21:56:42', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 21:56:42', '', '-', '2009-06-15 21:56:42', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.8ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:09:20', '2009-06-15 23:09:20', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:09:20', 'title', '.......', '2009-06-15 23:09:20', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:09:20', '', 'abc', '2009-06-15 23:09:20', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:09:20', '', '-', '2009-06-15 23:09:20', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:09:36', '2009-06-15 23:09:36', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:09:36', 'title', '.......', '2009-06-15 23:09:36', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:09:36', '', 'abc', '2009-06-15 23:09:36', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:09:36', '', '-', '2009-06-15 23:09:36', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:13:31', '2009-06-15 23:13:31', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:13:31', 'title', '.......', '2009-06-15 23:13:31', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:13:31', '', 'abc', '2009-06-15 23:13:31', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:13:31', '', '-', '2009-06-15 23:13:31', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:21:52', '2009-06-15 23:21:52', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:21:52', 'title', '.......', '2009-06-15 23:21:52', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:21:52', '', 'abc', '2009-06-15 23:21:52', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:21:52', '', '-', '2009-06-15 23:21:52', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.9ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:28:25', '2009-06-15 23:28:25', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:28:25', 'title', '.......', '2009-06-15 23:28:25', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:28:25', '', 'abc', '2009-06-15 23:28:25', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:28:25', '', '-', '2009-06-15 23:28:25', NULL, 1)[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:28:50', '2009-06-15 23:28:50', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:28:50', 'title', '.......', '2009-06-15 23:28:50', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:28:50', '', 'abc', '2009-06-15 23:28:50', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:28:50', '', '-', '2009-06-15 23:28:50', NULL, 1)[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:29:19', '2009-06-15 23:29:19', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:29:19', 'title', '.......', '2009-06-15 23:29:19', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:29:19', '', 'abc', '2009-06-15 23:29:19', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:29:19', '', '-', '2009-06-15 23:29:19', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:34:39', '2009-06-15 23:34:39', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:34:39', 'title', '.......', '2009-06-15 23:34:39', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:34:39', '', 'abc', '2009-06-15 23:34:39', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:34:39', '', '-', '2009-06-15 23:34:39', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:40:21', '2009-06-15 23:40:21', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:40:21', 'title', '.......', '2009-06-15 23:40:21', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:40:21', '', 'abc', '2009-06-15 23:40:21', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:40:21', '', '-', '2009-06-15 23:40:21', NULL, 1)[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-15 23:48:38', '2009-06-15 23:48:38', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-15 23:48:38', 'title', '.......', '2009-06-15 23:48:38', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:48:38', '', 'abc', '2009-06-15 23:48:38', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-15 23:48:38', '', '-', '2009-06-15 23:48:38', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-16 00:04:52', '2009-06-16 00:04:52', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-16 00:04:52', 'title', '.......', '2009-06-16 00:04:52', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-16 00:04:52', '', 'abc', '2009-06-16 00:04:52', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-16 00:04:52', '', '-', '2009-06-16 00:04:52', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "screen_name", "email") VALUES('2009-06-16 00:11:35', '2009-06-16 00:11:35', 'abc', 'aaa@rails.2.3.com')[0m
+  [4;35;1mPost Create (0.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at", "user_id") VALUES('2009-06-16 00:11:35', 'title', '.......', '2009-06-16 00:11:35', 1)[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-16 00:11:35', '', 'abc', '2009-06-16 00:11:35', 1, 1)[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO "comments" ("created_at", "body", "nickname", "updated_at", "post_id", "user_id") VALUES('2009-06-16 00:11:35', '', '-', '2009-06-16 00:11:35', NULL, 1)[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT "comments".* FROM "comments" WHERE ("comments".user_id = 1) [0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" INNER JOIN "comments" ON "posts".id = "comments".post_id WHERE (("comments".user_id = 1)) [0m
